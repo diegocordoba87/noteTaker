@@ -40,10 +40,10 @@ app.post("/api/notes", (req, res) => {
     notes.push(newNote)
 
     fs.writeFile("./db/db.json", JSON.stringify(notes), (err) => {
-        if (!err) console.log("it worked");
-        res.json(database)
-      })
-    })    
+        if (!err) console.log("it worked");       
+      })      
+    }) 
+    res.json(database)   
 })
 
 app.listen(PORT, (req, res) =>{
