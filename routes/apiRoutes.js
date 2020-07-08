@@ -18,7 +18,8 @@ router.get("/notes", (req, res) => {
     database.push(req.body);
     res.json(true);
 
-    // fs.readFile("../db/db.json", (err, data) => {
+    // This is the code I started with and will save in case I have to go back and use it 
+    //fs.readFile("../db/db.json", (err, data) => {
     //   const notes = JSON.parse(data);
     //   let newNote = {
     //     id: notes.length + 1,
